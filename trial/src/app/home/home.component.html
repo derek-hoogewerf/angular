@@ -15,5 +15,11 @@
 </div>
 
 <div class="play-container">
-    <ng-template [ngif]="clickCounter > 5" ></ng-template [ngif]>
+    <ng-template [ngIf]="clickCounter > 5"  [ngIfElse]="none">
+        <p>The click coutner <strong> IS GREATER </strong> than 5.</p>
+    </ng-template>
+    <ng-template #none>
+        <p>The click coutner <strong> IS LESS </strong> than 5.</p>
+    </ng-template>
+
 </div>
