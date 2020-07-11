@@ -10,12 +10,14 @@ export class HomeComponent implements OnInit {
   clickCounter: number = 0;
   name: String = '';
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   countClick() {
+
     this.clickCounter += 1;
   }
 
